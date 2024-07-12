@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Văn Thắng MEDIA</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">VĂN THẮNG MEDIA</a>
+      <nav>
+        <a href="models.html">Dịch vụ</a>
+        <a href="nav/about.html">Thông tin</a>
+        <!-- <a href="nav/login.html">Login</a> -->
+      </nav>
+    </header>
+
+    <main>
+      <section class="slider">
+        <div class="slider-container">
+          <img src="imgs/1.jpg" id="sliderImg" alt="" />
+        </div>
+        <button onclick="Arrow(this)" id="left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="14"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+        </button>
+        <button onclick="Arrow(this)" id="right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="14"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </button>
+        <div class="logo-container">
+          <!-- <img src="imgs/LOGOVT.png" id="logo" alt="" /> -->
+        </div>
+      </section>
+      <section class="main">
+        <h1 class="section-logo">Các dịch vụ của chúng tôi</h1>
+        <div class="container" id="modelsContainer">
+          <div class="card">
+            <div class="img"><img src="imgs/anh1.jpg" alt="" /></div>
+            <div class="info">
+              <div class="name">
+                <h3>FACEBOOK BỊ HACK THAY ĐỔI EMAIL VÀ SĐT</h3>
+              </div>
+
+              <a href="pages/dichvu1.html">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="imgs/anh2.jpg" alt="" /></div>
+            <div class="info">
+              <div class="name"><h3>FACEBOOK BỊ KHÓA KÉT SẮT MÀU TÍM</h3></div>
+              <a href="pages/dichvu2.html">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="imgs/anh3.jpg" alt="" /></div>
+            <div class="info">
+              <div class="name">
+                <h3>FACEBOOK VI PHẠM TIÊU CHUẨN CỘNG ĐỒNG</h3>
+              </div>
+              <a href="pages/dichvu3.html">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="imgs/anh4.jpg" alt="" /></div>
+            <div class="info">
+              <div class="name"><h3>FACEBOOK BỊ MÃ ĐĂNG NHẬP</h3></div>
+              <a href="pages/dichvu4.html">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="imgs/anh5.jpg" alt="" /></div>
+            <div class="info">
+              <div class="name">
+                <h3>FACEBOOK BỊ KHÓA BẮT XÁC MINH DANH TÍNH</h3>
+              </div>
+              <a href="pages/dichvu5.html">Xem chi tiết</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="imgs/anh6.jpg" alt="" /></div>
+            <div class="info">
+              <div class="name"><h3>FACEBOOK BỊ VÔ HIỆU HÓA 180 NGÀY</h3></div>
+              <a href="pages/dichvu6.html">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="margin-top: 4rem">
+      <div class="footer-container">
+        <div class="col">
+          <h3>VANTHANGMEDIA</h3>
+          <p><i class="fas fa-phone"></i> Hotline: +0567.06.2222</p>
+          <p><i class="fas fa-envelope"></i> Email: vanthang@gmail.com</p>
+          <p><i class="fas fa-globe"></i> Website: vanthangmedia.id.vn</p>
+        </div>
+        <div class="col">
+          <h3>CUSTOMER SERVICE</h3>
+          <p><i class="fas fa-truck"></i> Return & Shipping Policy</p>
+          <p><i class="fas fa-user-secret"></i> Privacy Policy</p>
+          <p><i class="fas fa-file-alt"></i> Terms of use</p>
+        </div>
+        <div class="col">
+          <!-- <h3 class="col1">CONTACT US</h3> -->
+          <img class="logo1" src="imgs/logoo.png" alt="logopay" />
+          <div class="social">
+            <a
+              href="https://www.instagram.com/kayancar2?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
+              target="_blank"
+              ><img src="/Frontend/imgs/Instagram_logo_2016.svg" alt=""
+            /></a>
+            <a href="https://wa.me/message/GS3SNC5ITYLZO1" target="_blank"
+              ><img src="/Frontend/imgs/whatsapp-svgrepo-com.svg" alt=""
+            /></a>
+            <a href="https://t.snapchat.com/kTAOvTEo" target="_blank"
+              ><img src="/Frontend/imgs/snapchat.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="inter">&copy;Copyright@VanThangMEDIA</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
