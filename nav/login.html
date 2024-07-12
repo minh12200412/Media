@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Registration Form</title>
+
+<style>
+
+
+body {
+font-family: Arial, sans-serif;
+
+background-color: #f4f4f4;
+
+margin: 0;
+
+padding: 0;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+height: 100vh;
+}
+form {
+
+background-color: #fff;
+
+padding: 20px;
+
+border-radius: 8px;
+
+box-shadow: 88 10px rgba(0, 0, 0, 0.1);
+
+width: 300px;
+
+}
+
+label {
+
+display: block;
+
+margin-bottom: 8px;
+}
+
+input {
+
+width: 100%;
+
+padding: 8px;
+
+margin-bottom: 16px;
+
+box-sizing: border-box;
+
+}
+
+select {
+
+width: 100%;
+
+padding: 8px;
+
+margin-bottom: 16px;
+
+box-sizing: border-box;
+
+}
+
+button {
+background-color: #000;
+color: #fff;
+
+padding: 10px;
+
+border: none;
+
+border-radius: 4px;
+
+cursor: pointer;
+}
+#home{  
+    width: fit-content;
+    background-color: #fff;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    bottom: 5rem ;
+    right: 4rem;
+}
+
+</style>
+
+</head>
+
+<body>
+<form>
+
+    <label for="username">Username:</label>
+
+    <input type="text"  id="username" name="username" required>
+
+    <label for="email">Email:</label>
+
+    <input type="email"   id="email" name="email" required>
+
+    <label for="password">Password:</label>
+
+    <input type="password"   id="password" name="password" required>
+
+    <label for="gender">Gender: </label>
+
+    <select id="gender"   name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <label for="date">Date of Birth: </label>
+
+    <input type="date"   id="date" name="date" required>
+
+    <button type="submit">Register</button>
+
+</form>
+
+<a id="home" href="../index.html">
+    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+</a>
+<script src=../app.js></script>
+</body>
+
+</html>
