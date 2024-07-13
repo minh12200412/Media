@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url(https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular);
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import "bootstrap/dist/css/bootstrap.min.css";
 html,
 body {
   cursor: url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"),
@@ -55,6 +55,20 @@ header a {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   font-family: "Roboto", sans-serif;
 }
+nav {
+  display: flex;
+}
+/* header li {
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  font-weight: 1000;
+  font-style: normal;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+} */
 header nav a:hover {
   color: aqua;
   background-color: rgb(255, 251, 0);
@@ -160,14 +174,14 @@ body {
 }
 
 .iconPhone {
-  top: 600px;
+  top: 500px;
   position: fixed;
   z-index: 1;
   cursor: pointer;
   /* Thêm animation vào đây */
 }
 .iconMessage {
-  top: 730px;
+  top: 620px;
   position: fixed;
   z-index: 1;
   cursor: pointer;
