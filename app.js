@@ -88,3 +88,16 @@ let aboutVideo = document.getElementById("aboutVideo");
 function handleVidoeClick() {
   aboutVideo.muted = !aboutVideo.muted;
 }
+
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    // Kiểm tra nếu thẻ a đã có lớp highlight
+    if (link.classList.contains("highlight")) {
+      link.classList.remove("highlight"); // Loại bỏ lớp highlight nếu đã có
+    } else {
+      link.classList.add("highlight"); // Thêm lớp highlight nếu chưa có
+    }
+  });
+});

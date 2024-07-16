@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,51 +29,72 @@
   </head>
   <body>
     <header>
-      <a href="../index.html" class="logo">Văn Thắng MEDIA</a>
+      <a href="../index.html" class="logo">VĂN THẮNG MEDIA</a>
       <nav>
-        <a href="../models.html">Dịch vụ</a>
-        <a href="../nav/about.html">Thông tin</a>
-        <!-- <a href="../nav/login.html">Login</a> -->
+        <!-- <a href="models.html">Dịch vụ</a> -->
+        <li class="nav-item dropdown">
+          <a
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            class="action"
+            >Dịch vụ
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="../index.html">Facebook</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../pages/Tads.html">Quảng cáo</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../pages/Instagram.html"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="../pages/Tiktok.html">TikTok</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Dịch Vụ Khác</a></li>
+          </ul>
+        </li>
+        <a class="action" href="../models.html">Thông tin</a>
+        <!-- <a href="nav/login.html">Login</a> -->
       </nav>
     </header>
     <main class="cars-main">
       <div class="image-gallery">
         <div class="beside-imgs">
           <img
-            src="../imgs/anh5.jpg"
-            onclick="gallery(this)"
-            id="img.1"
-            alt=""
-            class="sideImg"
-          />
-          <!-- <img
-            src="../imgs/Car8.2.jfif"
+            src="../imgs/Car7.1.jfif"
             onclick="gallery(this)"
             id="img.1"
             alt=""
             class="sideImg"
           />
           <img
-            src="../imgs/Car8.3.jfif"
+            src="../imgs/Car7.2.jfif"
             onclick="gallery(this)"
             id="img.1"
             alt=""
             class="sideImg"
           />
           <img
-            src="../imgs/Car8.4.jfif"
+            src="../imgs/Car7.3.jfif"
             onclick="gallery(this)"
             id="img.1"
             alt=""
             class="sideImg"
-          /> -->
+          />
         </div>
         <div>
-          <img src="../imgs/anh5.jpg" id="mainImg" class="main-img" alt="" />
+          <img src="../imgs/Car7.1.jfif" id="mainImg" class="main-img" alt="" />
         </div>
         <div class="car-info">
-          <h1>FACEBOOK BỊ KHÓA BẮT XÁC MINH DANH TÍNH</h1>
-          <a href="https://zalo.me/0567062222">Liên hệ với tôi</a>
+          <h1>Dịch vụ 7</h1>
+          <a href="#footer">Contact us</a>
         </div>
       </div>
     </main>
@@ -89,17 +114,15 @@
         </div>
         <div class="col">
           <!-- <h3 class="col1">CONTACT US</h3> -->
-          <img class="logo1" src="/Frontend/imgs/logoo.png" alt="logopay" />
+          <img class="logo1" src="../imgs/logoo.png" alt="logopay" />
           <div class="social">
-            <a
-              href="https://www.instagram.com/kayancar2?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="
-              target="_blank"
+            <a href="#" target="_blank"
               ><img src="/Frontend/imgs/Instagram_logo_2016.svg" alt=""
             /></a>
-            <a href="https://wa.me/message/GS3SNC5ITYLZO1" target="_blank"
+            <a href="#" target="_blank"
               ><img src="/Frontend/imgs/whatsapp-svgrepo-com.svg" alt=""
             /></a>
-            <a href="https://t.snapchat.com/kTAOvTEo" target="_blank"
+            <a href="#" target="_blank"
               ><img src="/Frontend/imgs/snapchat.png" alt=""
             /></a>
           </div>

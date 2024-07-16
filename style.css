@@ -2,11 +2,16 @@
 @import url(https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular);
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 html,
 body {
   cursor: url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"),
     auto;
 }
+/* * {
+  max-width: 100%;
+  box-sizing: border-box;
+} */
 a:hover {
   cursor: url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"),
     auto;
@@ -58,6 +63,13 @@ header a {
 nav {
   display: flex;
 }
+li {
+  list-style: none;
+}
+
+nav .nav-item {
+  padding: 10px 0;
+}
 /* header li {
   padding: 10px;
   color: #000;
@@ -70,8 +82,15 @@ nav {
   font-family: "Roboto", sans-serif;
 } */
 header nav a:hover {
+  transition: 0.4s;
   color: aqua;
   background-color: rgb(255, 251, 0);
+}
+.highlight {
+  color: aqua;
+}
+nav .dropdown-menu .dropdown-item:hover {
+  color: aqua;
 }
 .slider {
   position: relative;
@@ -134,9 +153,9 @@ main {
   text-align: center;
   align-items: center;
 }
-body {
+/* body {
   z-index: 2;
-}
+} */
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -226,7 +245,7 @@ body {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 60%;
+  width: 100%;
   /* position: relative; */
 }
 .card {
@@ -252,7 +271,12 @@ body {
   justify-content: space-around;
   width: 100%;
   flex-direction: column;
+  height: 100%;
   /* padding: 15px; */
+}
+.info .name {
+  flex-grow: 1;
+  /* margin-bottom: 20px; */
 }
 .info a {
   text-decoration: none;
@@ -266,12 +290,14 @@ body {
   bottom: 1px;
   text-align: center;
   margin: 10px 70px;
+  margin-top: 20px; /* Khoảng cách từ thẻ a đến các phần tử khác */
+  align-self: flex-start;
 }
 .info a:hover {
   color: black;
   background-color: aquamarine;
 }
-
+/* 
 footer {
   background-color: #000;
   color: white;
@@ -283,15 +309,58 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 .footer-container .col p {
   margin-top: 10px;
+}
+.footer-container .col {
+  margin-left: 140px;
 }
 footer > p {
   font-weight: 300;
   margin-left: -60px;
   margin-top: 20px;
+} */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 50px 80px;
+  margin-top: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Cho phép các khối con xuống dòng khi không đủ chỗ */
+}
+
+.footer-container .col {
+  flex: 1; /* Cho phép các khối con tự co giãn */
+  min-width: 200px; /* Đảm bảo các khối con có kích thước tối thiểu */
+  margin: 10px 20px 10px 140px; /* Khoảng cách giữa các khối con */
+}
+
+.footer-container .col p {
+  margin-top: 10px;
+}
+
+footer > p {
+  font-weight: 300;
+  text-align: center; /* Canh giữa nội dung copyright */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container .col {
+    margin: 20px 0; /* Tạo khoảng cách giữa các khối khi xếp chồng lên nhau */
+    text-align: center; /* Canh giữa nội dung khi ở chế độ di động */
+  }
 }
 
 .cars-main {
@@ -459,10 +528,10 @@ body {
   background-repeat: no-repeat;
 }
 .inter {
-  text-align: center;
-  width: 110%;
-  /* width: 1400px; */
-  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* padding-left: 100px; */
 }
 hr {
   margin-top: 9px;
