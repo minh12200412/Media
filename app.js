@@ -1,9 +1,12 @@
 function Arrow(key) {
   let img = document.getElementById("sliderImg");
   let imgPath = img.src.split("/");
+  console.log(imgPath);
   let imgName = imgPath[imgPath.length - 1];
+  console.log(imgName);
   let imgString = imgName.split(".")[0];
-  let imgNum = parseInt(imgString, 10);
+  let imgNum = parseInt(imgString[2], 10);
+  console.log(imgNum);
   if (key.id === "right") {
     if (imgNum == 4) {
       imgNum = 1;
@@ -17,14 +20,15 @@ function Arrow(key) {
       imgNum = imgNum - 1;
     }
   }
-  let lastPath = `imgs/${imgNum}.jpg`;
+  let lastPath = `imgs/bg${imgNum}.jpg`;
   img.src = lastPath;
-  console.log(lastPath);
 }
 
 function gallery(selectedImg) {
   let mainImg = document.getElementById("mainImg");
+  console.log(selectedImg.src);
   mainImg.src = selectedImg.src;
+  console.log(mainImg.src);
   let mainImgNum = mainImg.src
     .split("/")
     [mainImg.src.split("/").length - 1].split(".")[1];
