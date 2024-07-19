@@ -32,7 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 52px;
-  box-shadow: -5px 3px 25px 0 rgba(0, 0, 0, 0.5);
+  /* box-shadow: -5px 3px 25px 0 rgba(0, 0, 0, 0.5); */
   position: fixed;
   top: 0;
   width: 100%;
@@ -152,6 +152,11 @@ main {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  /* background-image: url(./imgs/1.jpg); */
+  object-fit: cover;
+  /* background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur((25px)); */
 }
 /* body {
   z-index: 2;
@@ -284,7 +289,7 @@ main {
   font-weight: 700;
   background-color: #000;
   width: fit-content;
-  padding: 15px;
+  padding: 13px;
   border-radius: 5px;
   /* position: absolute; */
   bottom: 1px;
@@ -535,4 +540,76 @@ body {
 }
 hr {
   margin-top: 9px;
+}
+
+.card {
+  /* background: linear-gradient(-60deg, #ee7752, #bdff38, #23a65d, #23d5ab); */
+  /* background: linear-gradient(-60deg, #ee7752, white, aqua, #23d5ab); */
+  /* background-size: 400% 400%; */
+  border-image-source: linear-gradient(60deg, #ee7752, white, aqua, #23d5ab);
+  /* animation: change 15s ease infinite; */
+  animation: border-change 5s ease infinite;
+  border: 4px solid;
+  border-image-slice: 1;
+}
+/* @keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  30% {
+    background-position: 100% 70%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+@keyframes border-change {
+  0% {
+    border-image-source: linear-gradient(60deg, pink, white, aqua, #23d5ab);
+  }
+  30% {
+    border-image-source: linear-gradient(120deg, pink, white, aqua, #23d5ab);
+  }
+  50% {
+    border-image-source: linear-gradient(180deg, pink, white, aqua, #23d5ab);
+  }
+  100% {
+    border-image-source: linear-gradient(60deg, pink, white, aqua, #23d5ab);
+  }
+}
+main,
+footer {
+  border-image-source: linear-gradient(-60deg, #ee7752, red, aqua, #23d5ab);
+  /* animation: change 15s ease infinite; */
+  animation: border-change2 2s ease infinite;
+  border-top: 6px solid;
+  border-image-slice: 1;
+}
+@keyframes border-change2 {
+  0% {
+    border-image-source: linear-gradient(-60deg, #ee7752, pink, aqua, #23d5ab);
+  }
+  30% {
+    border-image-source: linear-gradient(-120deg, #ee7752, pink, aqua, #23d5ab);
+  }
+  50% {
+    border-image-source: linear-gradient(-180deg, #ee7752, pink, aqua, #23d5ab);
+  }
+  100% {
+    border-image-source: linear-gradient(-60deg, #ee7752, pink, aqua, #23d5ab);
+  }
+}
+.cars-main-new {
+  display: block;
+}
+.main-img-new {
+  width: 100% !important;
+}
+.car-info-new {
+  align-items: center;
+  padding: 0 0 100px 0;
+  margin-left: 100px;
 }

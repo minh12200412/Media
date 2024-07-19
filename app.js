@@ -8,14 +8,14 @@ function Arrow(key) {
   let imgNum = parseInt(imgString[2], 10);
   console.log(imgNum);
   if (key.id === "right") {
-    if (imgNum == 4) {
+    if (imgNum == 6) {
       imgNum = 1;
     } else {
       imgNum = imgNum + 1;
     }
   } else {
     if (imgNum == 1) {
-      imgNum = 4;
+      imgNum = 6;
     } else {
       imgNum = imgNum - 1;
     }
