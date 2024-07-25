@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
@@ -48,8 +53,9 @@
       <i class="fas fa-t witter" id="twitter"></i>
       <i class="fas fa-facebook-square" id="facebook"></i>
     </div> -->
-    <header>
+    <header class="d-flex justify-content-between align-items-center p-3">
       <a href="main.html" class="logo">VĂN THẮNG MEDIA</a>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
       <nav>
         <!-- <a href="models.html">Dịch vụ</a> -->
         <li class="nav-item dropdown">
