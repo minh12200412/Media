@@ -8,14 +8,14 @@ function Arrow(key) {
   let imgNum = parseInt(imgString[2], 10);
   console.log(imgNum);
   if (key.id === "right") {
-    if (imgNum == 6) {
+    if (imgNum == 7) {
       imgNum = 1;
     } else {
       imgNum = imgNum + 1;
     }
   } else {
     if (imgNum == 1) {
-      imgNum = 6;
+      imgNum = 7;
     } else {
       imgNum = imgNum - 1;
     }
@@ -23,6 +23,11 @@ function Arrow(key) {
   let lastPath = `imgs/bg${imgNum}.jpg`;
   img.src = lastPath;
 }
+function simulateRightArrowKeyPress() {
+  const rightKey = { id: "right" };
+  Arrow(rightKey);
+}
+setInterval(simulateRightArrowKeyPress, 2000);
 
 function gallery(selectedImg) {
   let mainImg = document.getElementById("mainImg");
@@ -93,18 +98,18 @@ function handleVidoeClick() {
   aboutVideo.muted = !aboutVideo.muted;
 }
 
-const navLinks = document.querySelectorAll("nav a");
+// const navLinks = document.querySelectorAll("nav a");
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    // Kiểm tra nếu thẻ a đã có lớp highlight
-    if (link.classList.contains("highlight")) {
-      link.classList.remove("highlight"); // Loại bỏ lớp highlight nếu đã có
-    } else {
-      link.classList.add("highlight"); // Thêm lớp highlight nếu chưa có
-    }
-  });
-});
+// navLinks.forEach((link) => {
+//   link.addEventListener("click", (event) => {
+//     // Kiểm tra nếu thẻ a đã có lớp highlight
+//     if (link.classList.contains("highlight")) {
+//       link.classList.remove("highlight"); // Loại bỏ lớp highlight nếu đã có
+//     } else {
+//       link.classList.add("highlight"); // Thêm lớp highlight nếu chưa có
+//     }
+//   });
+// });
 
 function toggleMenu() {
   var navMenu = document.getElementById("nav-menu");
